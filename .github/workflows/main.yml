@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_ID: 'dfdffdfd'
+  PROJECT_ID: 'manuelmata-dev'
   APP_ENV: 'staging'
 
 jobs:
