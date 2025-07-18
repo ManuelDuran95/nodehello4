@@ -13,7 +13,6 @@ env_variables:
   GCP_PROJECT_NUMBER: '95436488673'
   RUNTIME_DIRECTORY: frontend
 automatic_scaling:
-  cool_down_period: 120s
   min_num_instances: 2
   max_num_instances: 20
   cpu_utilization:
