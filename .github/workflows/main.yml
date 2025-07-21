@@ -35,6 +35,7 @@ jobs:
 
       - name: Deploy to App Engine
         uses: google-github-actions/deploy-appengine@v2
+        timeout-minutes: 15
         with:
           project_id: ${{ env.PROJECT_ID }}
           deliverables: frontend-stage.yaml
