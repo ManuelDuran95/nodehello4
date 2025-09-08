@@ -15,11 +15,6 @@ env_variables:
   GCP_PROJECT_ID: manuelmata-dev
   GCP_PROJECT_NUMBER: '95436488673'
   RUNTIME_DIRECTORY: frontend
-automatic_scaling:
-  min_num_instances: 2
-  max_num_instances: 20
-  cpu_utilization:
-    target_utilization: 0.5
 resources:
   cpu: 1
   memory_gb: 3
