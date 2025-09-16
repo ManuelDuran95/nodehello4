@@ -1,4 +1,4 @@
-runtime: nodejs20
+runtime: nodejs22
 api_version: '1.0'
 env: flexible
 runtime_config:
@@ -32,5 +32,5 @@ readiness_check:
   app_start_timeout_sec: '300'
 service_account: test112024@manuelmata-dev.iam.gserviceaccount.com
 flexible_runtime_settings:
-  operating_system: ubuntu20
-  runtime_version: '20'
+  operating_system: ubuntu22
+  runtime_version: '22'
