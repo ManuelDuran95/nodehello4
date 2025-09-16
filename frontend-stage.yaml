@@ -1,4 +1,4 @@
-runtime: nodejs22
+runtime: nodejs
 api_version: '1.0'
 env: flexible
 runtime_config:
