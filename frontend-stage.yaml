@@ -3,6 +3,7 @@ api_version: '1.0'
 env: flexible
 runtime_config:
     operating_system: "ubuntu22"
+     runtime_version: "22"
 threadsafe: true
 handlers:
   - url: /.*
