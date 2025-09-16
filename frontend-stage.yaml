@@ -32,5 +32,5 @@ readiness_check:
   app_start_timeout_sec: '300'
 service_account: test112024@manuelmata-dev.iam.gserviceaccount.com
 flexible_runtime_settings:
-  operating_system: ubuntu22
+  operating_system: ubuntu20
   runtime_version: '20'
