@@ -1,6 +1,6 @@
 runtime: nodejs
 api_version: '1.0'
-env: flexible
+
 runtime_config:
     operating_system: "ubuntu22"
 threadsafe: true
@@ -26,3 +26,5 @@ readiness_check:
   success_threshold: 2
   app_start_timeout_sec: '300'
 service_account: test112024@manuelmata-dev.iam.gserviceaccount.com
+vpc_access_connector:
+ name: projects/manuelmata-dev/locations/us-central1/connectors/test-case-34
