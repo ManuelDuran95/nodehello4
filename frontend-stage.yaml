@@ -1,30 +1,8 @@
-runtime: nodejs
-api_version: '1.0'
+runtime: nodejs22
 
-runtime_config:
-    operating_system: "ubuntu22"
-threadsafe: true
+# Optional: If your app needs a custom start command, uncomment and edit the next line:
+# entrypoint: node app.js
+
 handlers:
-  - url: /.*
-    script: auto
-    secure: always
-    redirect_http_response_code: '301'
-resources:
-  cpu: 1
-  memory_gb: 3
-  disk_size_gb: 10
-liveness_check:
-  initial_delay_sec: '300'
-  check_interval_sec: '30'
-  timeout_sec: '4'
-  failure_threshold: 4
-  success_threshold: 2
-readiness_check:
-  check_interval_sec: '5'
-  timeout_sec: '4'
-  failure_threshold: 2
-  success_threshold: 2
-  app_start_timeout_sec: '300'
-service_account: test112024@manuelmata-dev.iam.gserviceaccount.com
-vpc_access_connector:
- name: projects/manuelmata-dev/locations/us-central1/connectors/test-case-34
+- url: /.*
+  script: auto
