@@ -28,8 +28,9 @@ jobs:
       - name: Google Cloud Auth
         uses: 'google-github-actions/auth@v2'
         with:
-          credentials_json: '${{ secrets.CREDENTIALS_JSON }}'
+          #credentials_json: '${{ secrets.CREDENTIALS_JSON }}'
           project_id: ${{ env.PROJECT_ID }}
+          workload_identity_provider: 'projects/95436488673/locations/global/workloadIdentityPools/github2/providers/my-repo2'
       - run: gcloud info
       - run: gcloud config set project ${{ env.PROJECT_ID }}    
 
